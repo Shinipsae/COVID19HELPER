@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\user\Desktop\2020_JavaProject\android_jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\295243705.index
+\0901_JSP\src
+C:\Users\user\Desktop\2020_JavaProject\android_jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2882137535.index
+\COVID19HELPER\src
+C:\Users\user\Desktop\2020_JavaProject\android_jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3773868663.index
+\COVID19HELEPR\src
