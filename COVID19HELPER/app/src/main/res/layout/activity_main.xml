@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColor"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/loginText"
+        android:layout_width="405dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/idField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logintext" />
+
+    <ImageView
+        android:id="@+id/idField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="230dp"
+        app:layout_constraintBottom_toTopOf="@+id/pwField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/textfield" />
+
+    <ImageView
+        android:id="@+id/pwField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="235dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idField"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/textfield" />
+
+    <ImageButton
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/loginbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwField" />
+
+    <ImageButton
+        android:id="@+id/signupButton"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/signupbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwField" />
+
+    <ImageButton
+        android:id="@+id/forgotpwButton"
+        android:layout_width="255dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/forgotpwbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwField" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textShortMessage"
+        android:textColor="#000000"
+        android:textColorHint="#c4ccd4"
+        app:layout_constraintBottom_toBottomOf="@+id/idField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idField" />
+
+    <EditText
+        android:id="@+id/pw"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textColorHint="#c4ccd4"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/idField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pwField" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

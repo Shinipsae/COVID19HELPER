@@ -1,5 +1,0 @@
-package javamysql;
-
-public class ConnectDB {
-
-}
