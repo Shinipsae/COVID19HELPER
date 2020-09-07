@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.covid19helper">
 
-<!--    <uses-permission android:name="android.permission.INTERNET">-->
+    <!-- 인터넷 권한 선언-->
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -14,7 +15,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                    <!-- 처음 액티비티 -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
