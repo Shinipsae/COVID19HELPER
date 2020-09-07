@@ -117,7 +117,7 @@
         app:layout_constraintTop_toTopOf="@+id/idField" />
 
     <EditText
-        android:id="@+id/pw"
+        android:id="@+id/password"
         android:layout_width="320dp"
         android:layout_height="53dp"
         android:layout_marginStart="80dp"
