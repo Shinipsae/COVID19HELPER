@@ -1,11 +1,14 @@
 package com.example.covid19helper;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.net.URL;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -27,7 +30,10 @@ public class MenuActivity extends AppCompatActivity {
         selftestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SelftestActivity.class);
+           //   Intent intent = new Intent(getApplicationContext(), SelftestActivity.class);
+           //   startActivity(intent);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://hcs.eduro.go.kr/"));
                 startActivity(intent);
             }
         });
@@ -35,7 +41,12 @@ public class MenuActivity extends AppCompatActivity {
         enterqrButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), EnterqrActivity.class);
+               // Intent intent = new Intent(getApplicationContext(), EnterqrActivity.class);
+               // startActivity(intent);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                // intent.setData(Uri.parse("https://nid.naver.com/login/privacyQR"));
+                intent.setData(Uri.parse("https://nid.naver.com/login/privacyQR?term=on"));
+
                 startActivity(intent);
             }
         });
