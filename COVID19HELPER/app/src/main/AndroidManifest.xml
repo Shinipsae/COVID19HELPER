@@ -13,11 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                    <!-- 처음 액티비티 -->
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <!--    <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter> -->
         </activity>
 
         <activity android:name=".ForgotpwActivity">
@@ -46,7 +45,14 @@
 
         <activity android:name=".AlarmActivity">
 
-    </activity>
+        </activity>
+
+        <activity android:name=".LogoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
 
     </application>
 
