@@ -3,6 +3,6 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="BackgroundColor">#deebf7</color>
-    <color name="FirstColor">#dae3f3</color>
+    <color name="BackgroundColor">#deebf7</color> <!-- 배경 컬러 -->
+    <color name="FirstColor">#dae3f3</color> <!-- 로고 화면 컬러 -->
 </resources>
