@@ -66,7 +66,6 @@ public class MenuActivity extends AppCompatActivity {
            //   startActivity(intent);
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://bot.dialogflow.com/620e1c6a-6b7c-4f7d-be9c-111ea46898a5"));
-
                 startActivity(intent);
             }
         });
