@@ -59,8 +59,8 @@ public class AlarmReceiver extends BroadcastReceiver {
                 .setWhen(System.currentTimeMillis())
 
                 .setTicker("{Time to watch some cool stuff!}")
-                .setContentTitle("상태바 드래그시 보이는 타이틀")
-                .setContentText("상태바 드래그시 보이는 서브타이틀")
+                .setContentTitle("외출전에 마스크를 착용하세요!")
+                .setContentText("covid19 helper 마스크알리미")
                 .setContentInfo("INFO")
                 .setContentIntent(pendingI);
 
