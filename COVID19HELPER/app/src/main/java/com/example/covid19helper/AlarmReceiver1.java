@@ -19,7 +19,7 @@ import java.util.Locale;
 
 import static android.content.Context.MODE_PRIVATE;
 
-public class AlarmReceiver extends BroadcastReceiver {
+public class AlarmReceiver1 extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
