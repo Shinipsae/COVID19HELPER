@@ -81,7 +81,7 @@
         app:srcCompat="@drawable/prevention" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/engButton"
         android:layout_width="85dp"
         android:layout_height="38dp"
         android:layout_marginStart="140dp"
@@ -92,7 +92,7 @@
         app:srcCompat="@drawable/engbutton" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/chButton"
         android:layout_width="85dp"
         android:layout_height="38dp"
         android:layout_marginStart="5dp"
@@ -102,11 +102,11 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/selftestButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/engButton"
         app:srcCompat="@drawable/chbutton" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/jaButton"
         android:layout_width="85dp"
         android:layout_height="38dp"
         android:layout_marginEnd="10dp"
@@ -114,7 +114,7 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/selftestButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/chButton"
         app:srcCompat="@drawable/jabutton" />
 
 

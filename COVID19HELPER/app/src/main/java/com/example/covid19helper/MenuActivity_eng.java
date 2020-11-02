@@ -6,31 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.net.URL;
-
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity_eng extends AppCompatActivity {
 
     ImageButton selftestButton;
     ImageButton enterqrButton;
     ImageButton alarmButton;
     ImageButton preventionButton;
-    ImageButton engButton;
+    ImageButton kButton;
     ImageButton chButton;
     ImageButton jaButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu); // 화면 나타내기
+        setContentView(R.layout.activity_menu_eng); // 화면 나타내기
 
         selftestButton = (ImageButton) findViewById(R.id.selftestButton);
         enterqrButton = (ImageButton) findViewById(R.id.enterqrButton);
         alarmButton = (ImageButton) findViewById(R.id.alarmButton);
         preventionButton = (ImageButton) findViewById(R.id.preventionButton);
-        engButton = (ImageButton) findViewById(R.id.engbutton);
+        kButton = (ImageButton) findViewById(R.id.kbutton);
         chButton = (ImageButton) findViewById(R.id.chbutton);
         jaButton = (ImageButton) findViewById(R.id.jabutton);
 
@@ -70,7 +67,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        engButton.setOnClickListener(new View.OnClickListener(){
+        kButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity_eng.class);
