@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,9 +28,9 @@ public class MenuActivity_ja extends AppCompatActivity {
         enterqrButton = (ImageButton) findViewById(R.id.enterqrButton);
         alarmButton = (ImageButton) findViewById(R.id.alarmButton);
         preventionButton = (ImageButton) findViewById(R.id.preventionButton);
-        engButton = (ImageButton) findViewById(R.id.engbutton);
-        chButton = (ImageButton) findViewById(R.id.chbutton);
-        kButton = (ImageButton) findViewById(R.id.jabutton);
+        engButton = (ImageButton) findViewById(R.id.engButton);
+        chButton = (ImageButton) findViewById(R.id.chButton);
+        kButton = (ImageButton) findViewById(R.id.jaButton);
 
         selftestButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -12,7 +12,7 @@
         android:id="@+id/menuText"
         android:layout_width="341dp"
         android:layout_height="0dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toTopOf="@+id/selftestButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/enterqrButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/alarmButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/preventionButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,40 +81,40 @@
         app:srcCompat="@drawable/prevention_e" />
 
     <ImageButton
-        android:id="@+id/kbutton"
+        android:id="@+id/kButton"
         android:layout_width="85dp"
         android:layout_height="38dp"
         android:layout_marginStart="140dp"
         android:layout_marginLeft="140dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/selftestButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/kbutton"/>
+        app:srcCompat="@drawable/kbutton" />
 
     <ImageButton
-        android:id="@+id/chbutton"
+        android:id="@+id/chButton"
         android:layout_width="85dp"
         android:layout_height="38dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/selftestButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/kbutton"
+        app:layout_constraintStart_toEndOf="@+id/kButton"
         app:srcCompat="@drawable/chbutton" />
 
     <ImageButton
-        android:id="@+id/jabutton"
+        android:id="@+id/jaButton"
         android:layout_width="85dp"
         android:layout_height="38dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/selftestButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/chbutton"
+        app:layout_constraintStart_toEndOf="@+id/chButton"
         app:srcCompat="@drawable/jabutton" />
 
 

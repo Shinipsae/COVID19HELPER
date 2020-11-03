@@ -68,7 +68,7 @@
     <ImageButton
         android:id="@+id/preventionButton"
         android:layout_width="390dp"
-        android:layout_height="80dp"
+        android:layout_height="75dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginEnd="5dp"

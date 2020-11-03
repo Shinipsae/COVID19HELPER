@@ -3,7 +3,9 @@ package com.example.covid19helper;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.ActionBar;
@@ -30,9 +32,10 @@ public class MenuActivity extends AppCompatActivity {
         enterqrButton = (ImageButton) findViewById(R.id.enterqrButton);
         alarmButton = (ImageButton) findViewById(R.id.alarmButton);
         preventionButton = (ImageButton) findViewById(R.id.preventionButton);
-        engButton = (ImageButton) findViewById(R.id.engbutton);
-        chButton = (ImageButton) findViewById(R.id.chbutton);
-        jaButton = (ImageButton) findViewById(R.id.jabutton);
+        engButton = (ImageButton) findViewById(R.id.engButton);
+        Log.d("mytag", (engButton == null) + "");
+        chButton = (ImageButton) findViewById(R.id.chButton);
+        jaButton = (ImageButton) findViewById(R.id.jaButton);
 
         selftestButton.setOnClickListener(new View.OnClickListener() {
             @Override

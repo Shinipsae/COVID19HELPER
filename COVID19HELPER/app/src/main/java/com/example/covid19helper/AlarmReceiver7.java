@@ -16,10 +16,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-
 import static android.content.Context.MODE_PRIVATE;
 
-public class AlarmReceiver1 extends BroadcastReceiver {
+public class AlarmReceiver7 extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
@@ -59,8 +58,8 @@ public class AlarmReceiver1 extends BroadcastReceiver {
                 .setWhen(System.currentTimeMillis())
 
                 .setTicker("{Time to watch some cool stuff!}")
-                .setContentTitle("외출전에 자가진단을 하세요!")
-                .setContentText("COVID19 HELPER 자가진단알리미")
+                .setContentTitle("外出前に自己診断をしてください！")
+                .setContentText("COVID19 HELPER")
                 .setContentInfo("INFO")
                 .setContentIntent(pendingI);
 
