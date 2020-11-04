@@ -78,6 +78,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity_eng.class);
                 startActivity(intent);
+                finish();
 
             }
         });
@@ -87,6 +88,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity_ch.class);
                 startActivity(intent);
+                finish();
 
             }
         });
@@ -96,7 +98,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity_ja.class);
                 startActivity(intent);
-
+                finish();
             }
         });
 

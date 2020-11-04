@@ -39,6 +39,18 @@
 
         </activity>
 
+        <activity android:name=".AlarmActivity_ch">
+
+        </activity>
+
+        <activity android:name=".AlarmActivity_eng">
+
+        </activity>
+
+        <activity android:name=".AlarmActivity_ja">
+
+        </activity>
+
         <activity android:name=".LogoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -53,10 +65,15 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".AlarmReceiver">
-
-        </receiver>
+        <receiver android:name=".AlarmReceiver"/>
         <receiver android:name=".AlarmReceiver1" />
+        <receiver android:name=".AlarmReceiver2" />
+        <receiver android:name=".AlarmReceiver3" />
+        <receiver android:name=".AlarmReceiver4" />
+        <receiver android:name=".AlarmReceiver5" />
+        <receiver android:name=".AlarmReceiver6" />
+        <receiver android:name=".AlarmReceiver7" />
+
 
     </application>
 

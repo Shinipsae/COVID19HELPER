@@ -54,7 +54,7 @@ public class MenuActivity_ch extends AppCompatActivity {
         alarmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AlarmActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AlarmActivity_ch.class);
                 startActivity(intent);
             }
         });
@@ -73,6 +73,7 @@ public class MenuActivity_ch extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
                 startActivity(intent);
+                finish();
 
             }
         });
@@ -82,7 +83,7 @@ public class MenuActivity_ch extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity_eng.class);
                 startActivity(intent);
-
+                finish();
             }
         });
 
@@ -91,7 +92,7 @@ public class MenuActivity_ch extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity_ja.class);
                 startActivity(intent);
-
+                finish();
             }
         });
 

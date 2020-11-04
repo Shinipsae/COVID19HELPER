@@ -30,7 +30,7 @@ public class MenuActivity_ja extends AppCompatActivity {
         preventionButton = (ImageButton) findViewById(R.id.preventionButton);
         engButton = (ImageButton) findViewById(R.id.engButton);
         chButton = (ImageButton) findViewById(R.id.chButton);
-        kButton = (ImageButton) findViewById(R.id.jaButton);
+        kButton = (ImageButton) findViewById(R.id.kButton);
 
         selftestButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +54,7 @@ public class MenuActivity_ja extends AppCompatActivity {
         alarmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AlarmActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AlarmActivity_ja.class);
                 startActivity(intent);
             }
         });
@@ -73,7 +73,7 @@ public class MenuActivity_ja extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity_eng.class);
                 startActivity(intent);
-
+                finish();
             }
         });
 
@@ -82,7 +82,7 @@ public class MenuActivity_ja extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity_ch.class);
                 startActivity(intent);
-
+                finish();
             }
         });
 
@@ -91,7 +91,7 @@ public class MenuActivity_ja extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
                 startActivity(intent);
-
+                finish();
             }
         });
 

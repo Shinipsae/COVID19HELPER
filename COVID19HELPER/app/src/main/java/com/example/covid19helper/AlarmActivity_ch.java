@@ -1,8 +1,5 @@
 package com.example.covid19helper;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.ComponentName;
@@ -10,7 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,21 +14,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TimePicker;
 import android.widget.Toast;
-import android.content.Intent;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
-public class AlarmActivity extends AppCompatActivity {
+public class AlarmActivity_ch extends AppCompatActivity {
 
     Button tool;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alarm);
+        setContentView(R.layout.activity_alarm_ch);
 
         tool = (Button)findViewById(R.id.tool);
         tool.setOnClickListener(new View.OnClickListener() {
@@ -47,12 +45,12 @@ public class AlarmActivity extends AppCompatActivity {
         final TimePicker picker=(TimePicker)findViewById(R.id.timePicker);
         final int hour;
         final int minute;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             picker.setMinute(10);
         } else {
             picker.setCurrentMinute(10);
         }
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             hour = picker.getMinute();
         } else {
             hour = picker.getCurrentMinute();
@@ -90,11 +88,11 @@ public class AlarmActivity extends AppCompatActivity {
             picker.setCurrentHour(pre_hour);
             picker.setCurrentMinute(pre_minute);
         }
+        Button button4 = (Button) findViewById(R.id.button4); // 마스크 - 중
+        Button button5 = (Button) findViewById(R.id.button5); // 자가진단
 
-        Button button = (Button) findViewById(R.id.button); // 마스크 - 영
-        Button button1 = (Button) findViewById(R.id.button1); // 자가진단
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 
@@ -140,12 +138,12 @@ public class AlarmActivity extends AppCompatActivity {
                 editor.apply();
 
 
-                diaryNotification(calendar);
+                diaryNotification4(calendar);
             }
 
         });
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 
@@ -191,15 +189,14 @@ public class AlarmActivity extends AppCompatActivity {
                 editor.apply();
 
 
-                diaryNotification1(calendar);
+                diaryNotification5(calendar);
             }
 
         });
-
 
     }
 
-    void diaryNotification(Calendar calendar)
+    void diaryNotification4(Calendar calendar)
     {
 //        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 //        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
@@ -208,7 +205,7 @@ public class AlarmActivity extends AppCompatActivity {
 
         PackageManager pm = this.getPackageManager();
         ComponentName receiver = new ComponentName(this, DeviceBootReceiver.class);
-        Intent alarmIntent = new Intent(this, AlarmReceiver.class);
+        Intent alarmIntent = new Intent(this, AlarmReceiver4.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, alarmIntent, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 
@@ -244,7 +241,7 @@ public class AlarmActivity extends AppCompatActivity {
         }
     }
 
-    void diaryNotification1(Calendar calendar)
+    void diaryNotification5(Calendar calendar)
     {
 //        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 //        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
@@ -253,7 +250,7 @@ public class AlarmActivity extends AppCompatActivity {
 
         PackageManager pm = this.getPackageManager();
         ComponentName receiver = new ComponentName(this, DeviceBootReceiver.class);
-        Intent alarmIntent = new Intent(this, AlarmReceiver2.class);
+        Intent alarmIntent = new Intent(this, AlarmReceiver5.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, alarmIntent, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 
