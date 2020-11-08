@@ -33,7 +33,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menuText"
-        app:srcCompat="@drawable/selftest_e" />
+        app:srcCompat="@drawable/selftest_e"
+        android:padding="0sp"
+        android:scaleType="centerCrop" />
 
     <ImageButton
         android:id="@+id/enterqrButton"
@@ -48,7 +50,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selftestButton"
-        app:srcCompat="@drawable/enterqr_e" />
+        app:srcCompat="@drawable/enterqr_e"
+        android:padding="0sp"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/alarmButton"
@@ -63,7 +67,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterqrButton"
-        app:srcCompat="@drawable/alarm_e" />
+        app:srcCompat="@drawable/alarm_e"
+        android:padding="0sp"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/preventionButton"
@@ -78,7 +84,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alarmButton"
-        app:srcCompat="@drawable/prevention_e" />
+        app:srcCompat="@drawable/prevention_e"
+        android:padding="0sp"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/kButton"
