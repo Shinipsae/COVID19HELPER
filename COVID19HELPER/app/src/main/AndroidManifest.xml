@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.covid19helper">
+    package="com.mirim.covid19helper">
 
     <!-- 인터넷 권한 선언-->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -15,64 +15,64 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
-        <activity android:name=".MenuActivity">
+        <activity android:name="com.mirim.covid19helper.MenuActivity">
            <!-- android:theme="@style/Theme.AppCompat.NoActionBar"-->
 
         </activity>
 
-        <activity android:name=".MenuActivity_eng">
+        <activity android:name="com.mirim.covid19helper.MenuActivity_eng">
             <!-- android:theme="@style/Theme.AppCompat.NoActionBar"-->
 
         </activity>
 
-        <activity android:name=".MenuActivity_ch">
+        <activity android:name="com.mirim.covid19helper.MenuActivity_ch">
             <!-- android:theme="@style/Theme.AppCompat.NoActionBar"-->
 
         </activity>
 
-        <activity android:name=".MenuActivity_ja">
+        <activity android:name="com.mirim.covid19helper.MenuActivity_ja">
             <!-- android:theme="@style/Theme.AppCompat.NoActionBar"-->
 
         </activity>
 
-        <activity android:name=".AlarmActivity">
+        <activity android:name="com.mirim.covid19helper.AlarmActivity">
 
         </activity>
 
-        <activity android:name=".AlarmActivity_ch">
+        <activity android:name="com.mirim.covid19helper.AlarmActivity_ch">
 
         </activity>
 
-        <activity android:name=".AlarmActivity_eng">
+        <activity android:name="com.mirim.covid19helper.AlarmActivity_eng">
 
         </activity>
 
-        <activity android:name=".AlarmActivity_ja">
+        <activity android:name="com.mirim.covid19helper.AlarmActivity_ja">
 
         </activity>
 
-        <activity android:name=".LogoActivity">
+        <activity android:name="com.mirim.covid19helper.LogoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <receiver android:name=".DeviceBootReceiver"
+        <receiver android:name="com.mirim.covid19helper.DeviceBootReceiver"
             android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".AlarmReceiver"/>
-        <receiver android:name=".AlarmReceiver1" />
-        <receiver android:name=".AlarmReceiver2" />
-        <receiver android:name=".AlarmReceiver3" />
-        <receiver android:name=".AlarmReceiver4" />
-        <receiver android:name=".AlarmReceiver5" />
-        <receiver android:name=".AlarmReceiver6" />
-        <receiver android:name=".AlarmReceiver7" />
+        <receiver android:name="com.mirim.covid19helper.AlarmReceiver"/>
+        <receiver android:name="com.mirim.covid19helper.AlarmReceiver1" />
+        <receiver android:name="com.mirim.covid19helper.AlarmReceiver2" />
+        <receiver android:name="com.mirim.covid19helper.AlarmReceiver3" />
+        <receiver android:name="com.mirim.covid19helper.AlarmReceiver4" />
+        <receiver android:name="com.mirim.covid19helper.AlarmReceiver5" />
+        <receiver android:name="com.mirim.covid19helper.AlarmReceiver6" />
+        <receiver android:name="com.mirim.covid19helper.AlarmReceiver7" />
 
 
     </application>
