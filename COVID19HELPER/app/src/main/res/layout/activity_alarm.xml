@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#b0c4de"
+    android:background="#f6f8f9"
     tools:context="com.mirim.covid19helper.MenuActivity">
 
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="359dp"
         android:layout_height="249dp"
-        android:background="#a3b4e2"
+        android:background="#ecf1f6"
         android:timePickerMode="spinner"
         app:layout_constraintBottom_toTopOf="@id/button"
         app:layout_constraintLeft_toLeftOf="parent"
