@@ -9,22 +9,33 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.NumberPicker;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.mirim.covid19helper.R;
 
+import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
+import static com.mirim.covid19helper.TimerActivity.setNumberPickerTextColor;
+
 public class AlarmActivity extends AppCompatActivity {
+
+    private TimePicker tStartTime;
+    private TimePicker tStopTime;
 
     Button tool;
 
@@ -32,6 +43,26 @@ public class AlarmActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
+
+        int hour_NumberPicker_id = Resources.getSystem().getIdentifier("hour", "id", "android");
+
+        int minute_NumberPicker_id = Resources.getSystem().getIdentifier("minute", "id", "android");
+
+        NumberPicker hourNumberPicker1 = (NumberPicker)tStartTime.findViewById(hour_NumberPicker_id);
+
+        NumberPicker minuteNumberPicker1 = (NumberPicker)tStartTime.findViewById(minute_NumberPicker_id);
+
+        NumberPicker hourNumberPicker2 = (NumberPicker)tStopTime.findViewById(hour_NumberPicker_id);
+
+        NumberPicker minuteNumberPicker2 = (NumberPicker)tStopTime.findViewById(minute_NumberPicker_id);
+
+        setNumberPickerTextColor(hourNumberPicker1, Color.BLACK);
+
+        setNumberPickerTextColor(hourNumberPicker2, Color.BLACK);
+
+        setNumberPickerTextColor(minuteNumberPicker1, Color.BLACK);
+
+        setNumberPickerTextColor(minuteNumberPicker2, Color.BLACK);
 
         tool = (Button)findViewById(R.id.tool);
         tool.setOnClickListener(new View.OnClickListener() {
@@ -197,6 +228,54 @@ public class AlarmActivity extends AppCompatActivity {
 
 
     }
+
+    public static boolean setNumberPickerTextColor(NumberPicker numberPicker, int color) {
+
+        final int count = numberPicker.getChildCount();
+
+            for (int i=0;i<count;i++) {
+
+                View child = numberPicker.getChildAt(i);
+
+                if (child instanceof EditText) {
+
+                    try {
+
+                        Field selectorWheelPaintField = numberPicker.getClass()
+
+                                .getDeclaredField("mSelectorWheelPaint");
+
+                        selectorWheelPaintField.setAccessible(true);
+
+                        ((Paint) selectorWheelPaintField.get(numberPicker)).setColor(color);
+
+                        ((EditText) child).setTextColor(color);
+
+                        numberPicker.invalidate();
+
+                        return true;
+
+                    } catch (NoSuchFieldException e) {
+
+                        //Log.w("setNumberPickerTextColor", e);
+
+                    } catch (IllegalAccessException e) {
+
+                        //Log.w("setNumberPickerTextColor", e);
+
+                    } catch (IllegalArgumentException e) {
+
+                        //Log.w("setNumberPickerTextColor", e);
+
+                    }
+
+                }
+
+            }
+
+            return false;
+
+        }
 
     void diaryNotification(Calendar calendar)
     {

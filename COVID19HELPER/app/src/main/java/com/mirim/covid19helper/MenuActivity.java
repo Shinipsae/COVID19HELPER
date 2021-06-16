@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mirim.covid19helper.R;
-
+// import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -32,7 +32,6 @@ public class MenuActivity extends AppCompatActivity {
         alarmButton = (ImageButton) findViewById(R.id.alarmButton);
         preventionButton = (ImageButton) findViewById(R.id.preventionButton);
         engButton = (ImageButton) findViewById(R.id.engButton);
-        Log.d("mytag", (engButton == null) + "");
         chButton = (ImageButton) findViewById(R.id.chButton);
         jaButton = (ImageButton) findViewById(R.id.jaButton);
 

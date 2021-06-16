@@ -38,7 +38,7 @@ public class AlarmActivity_ja extends AppCompatActivity {
         tool.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MenuActivity_ja.class);
                 startActivity(intent);
                 finish();
             }
