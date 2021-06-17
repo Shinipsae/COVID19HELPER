@@ -13,34 +13,34 @@
         android:layout_height="160dp"
         app:layout_constraintBottom_toTopOf="@+id/selftestButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
         app:srcCompat="@drawable/mainimg" />
 
     <ImageButton
         android:id="@+id/selftestButton"
         android:layout_width="340dp"
         android:layout_height="63dp"
-        android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/enterqrButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.937"
         app:srcCompat="@drawable/selftest_e" />
 
     <ImageButton
         android:id="@+id/enterqrButton"
         android:layout_width="340dp"
         android:layout_height="63dp"
-        android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/alarmButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.988"
+        app:layout_constraintVertical_bias="0.954"
         app:srcCompat="@drawable/enterqr_e" />
 
     <ImageButton
@@ -53,20 +53,19 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.986"
         app:srcCompat="@drawable/alarm_e" />
 
     <ImageButton
         android:id="@+id/preventionButton"
         android:layout_width="340dp"
         android:layout_height="63dp"
-        android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/chButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992"
+        app:layout_constraintVertical_bias="0.948"
         app:srcCompat="@drawable/prevention_e" />
 
     <ImageButton
@@ -85,7 +84,7 @@
         android:id="@+id/chButton"
         android:layout_width="60dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="46dp"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -102,7 +101,7 @@
         android:layout_marginLeft="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.920"
